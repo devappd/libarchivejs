@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const {checksum} = require('../checksum');
 
-const { File } = require('file-api');
+const { File } = require('@devappd/nodejs-html5-file-api');
 const { runTest, runEncryptionTest, runSingleTest } = require('./test-bundle.js');
 
 describe("extract various compression types in node.js", () => {

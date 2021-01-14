@@ -1,12 +1,12 @@
 {
-  "name": "libarchive.js",
-  "version": "1.3.0",
-  "description": "extract archive files in browser, libarchive port in wasm",
+  "name": "@devappd/libarchive.js",
+  "version": "1.3.1",
+  "description": "extract archive files in browser and node.js, libarchive port in wasm",
   "main": "dist-node/bundle.js",
   "browser": "main.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/nika-begiashvili/libarchivejs"
+    "url": "https://github.com/devappd/libarchivejs"
   },
   "scripts": {
     "build": "rollup -c --environment BUILD:production",
@@ -25,6 +25,9 @@
     "browser"
   ],
   "author": "Nika Begiashvili",
+  "contributors": [
+    "devappd"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@peculiar/webcrypto": "^1.1.3",
@@ -38,7 +41,7 @@
     "static-server": "^2.2.1"
   },
   "dependencies": {
-    "file-api": "https://github.com/devappd/file-api/archive/master.tar.gz",
+    "@devappd/nodejs-html5-file-api": "^0.11.0",
     "web-worker": "^1.0.0"
   }
 }

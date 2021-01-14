@@ -1,6 +1,6 @@
 'use strict';
 
-var fileApi = require('file-api');
+var nodejsHtml5FileApi = require('@devappd/nodejs-html5-file-api');
 require('web-worker');
 
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "(wasmRoot|crypto)" }] */
@@ -48,7 +48,7 @@ class ArchiveReader{
         }
         const { promise, resolve, reject } = this._promiseHandles();
         this._file = file;
-        const reader = new fileApi.FileReader();
+        const reader = new nodejsHtml5FileApi.FileReader();
         reader.onload = () => this._loadFile(reader.result,resolve,reject);
         reader.readAsArrayBuffer(file);
         return promise;

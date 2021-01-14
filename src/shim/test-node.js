@@ -9,8 +9,8 @@
 export let wasmRoot = `${__dirname}/../../dist-node/wasm-gen`;
 // web-worker package requires a valid URL
 export let workerPath = `file:///${__dirname}/../../dist-node/worker-bundle.js`;
-export { FileReader } from 'file-api';
-export { File } from 'file-api';
+export { FileReader } from '@devappd/nodejs-html5-file-api';
+export { File } from '@devappd/nodejs-html5-file-api';
 export { default as Worker } from 'web-worker';
 
 import { Crypto } from '@peculiar/webcrypto';

@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const {checksum} = require('../../checksum');
 
-const { File } = require('file-api');
+const { File } = require('@devappd/nodejs-html5-file-api');
 const { runTest } = require('../test-bundle.js');
 
 describe("Extract TAR files with various compressions in node.js", () => {

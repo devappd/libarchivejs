@@ -32,7 +32,7 @@ export default [
                 'shim/browser.js': 'shim/node.js'
             })
         ],
-        external: [ 'file-api', 'web-worker' ]
+        external: [ '@devappd/nodejs-html5-file-api', 'web-worker' ]
     },
     {
         input: 'src/webworker/worker.js',
@@ -52,7 +52,7 @@ export default [
                 ],
             })
         ],
-        external: [ 'file-api', 'web-worker' ]
+        external: [ '@devappd/nodejs-html5-file-api', 'web-worker' ]
     },
     {
         input: 'test/files/tests.js',
@@ -67,6 +67,6 @@ export default [
                 'shim/browser.js': 'shim/test-node.js'
             })
         ],
-        external: [ 'file-api', 'web-worker', '@peculiar/webcrypto' ]
+        external: [ '@devappd/nodejs-html5-file-api', 'web-worker', '@peculiar/webcrypto' ]
     }
 ];
